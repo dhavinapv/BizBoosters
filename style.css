@@ -150,7 +150,7 @@ nav {
 }
 
 .h1 {
-    margin: 7rem 4rem 0 3rem;
+    margin: 6rem 4rem 0 3rem;
     text-align: center;
     background-color: #0a1829;
     color: #fff;
@@ -313,7 +313,7 @@ nav {
 /* Main body di analysis.html */
 .opening {
     line-height: 25px;
-    margin: 5rem 4rem 8rem 4rem;
+    margin: 5rem 4rem 3rem 4rem;
     text-align: justify;
 }
 
