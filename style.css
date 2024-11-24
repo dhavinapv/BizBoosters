@@ -447,8 +447,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    opacity: 0.8;
-    color: white;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
 }
 
 /* Supaya float hilang setelah main body */
