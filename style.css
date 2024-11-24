@@ -1,0 +1,565 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    color: #0a1829;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        width: 100%;
+    }
+}
+
+/* Main body */
+p {
+    line-height: 25px;
+}
+
+.p {
+    line-height: 25px;
+    margin: 0 4rem;
+    text-align: justify;
+}
+
+/* Navigasi menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    margin: 0 -30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    position: fixed;
+    transition: all 300ms ease-in-out;
+    height: 80px;
+}
+
+.navbar-judul a {
+    color: #0a1829;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #0a1829;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin: 0.5em;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 2px;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navbar a:hover:not(.active) {
+    color:  rgb(76 78 221);
+}
+
+.navbar a.active {
+    color: rgb(76 78 221);
+    font-weight: 1000;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Dropdown navbar */
+.dropbtn {
+    color: #ffb800;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #0a1829;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover
+.dropdown-content {
+    display: grid;
+}
+
+/* Button untuk scroll ke atas */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Untuk sembunyikan tombol */
+    color: #0a1829;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    background-color: transparent;
+    color: rgb(76 78 221);
+}
+
+/* Membuat kotak judul bergradasi
+.gradient-heading {
+    font-weight: bold;
+    width: 190vh;
+    margin-top: 5rem;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #f3f3f3, white);
+    display: inline-block;
+    border-left: 10px solid #cda349;
+    letter-spacing: 0.7px;
+    line-height: 25px;
+} */
+
+/* Tampilan HP */
+@media screen and (max-width: 400px) {
+    .gradient-heading {
+        width: 100%;
+    }
+}
+
+.h1 {
+    margin: 7rem 4rem 0 3rem;
+    text-align: center;
+    background-color: #0a1829;
+    color: #fff;
+}
+
+/* Main body home.html */
+.product {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 4rem;
+    gap: 10px;
+}
+
+.best {
+    background-color: transparent;
+    border: #fff;
+    position: relative;
+}
+
+.best img {
+    display: block;
+    width: 258.72px;
+    height: 344.96px;
+    border-radius: 10px;
+}
+
+.best:hover {
+    background-color: transparent;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; 
+    width: 218.5px;
+    margin: 0;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.best:hover .overlay {
+    opacity: 1;
+}
+
+/* Huruf menjadi besar */
+.drop-cap {
+    float: left;
+    font-size: 3.06em;
+    line-height: 1;
+    margin-top: 1px;
+    padding-right: 5px;
+}
+
+/* Gallery foto */
+.gallery {
+    width: 100%;
+}
+
+.gallery-container {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    height: 400px;
+    max-width: 1000px;
+    position: relative;
+}
+
+.gallery-item {
+    height: 200px;
+    width: 300px;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    border-radius: 10px;
+    background-size: contain;
+}
+
+.gallery-item-1, .gallery-item-5 {
+    height: 201.72px;
+    width: 151.29px;
+}
+
+.gallery-item-1 {
+    left: 16%;
+    opacity: 0.7;
+    transform: translateX(-50%);
+}
+
+.gallery-item-2, .gallery-item-4 {
+    height: 241.08px;
+    width: 180.81px;
+    opacity: 0.85;
+    z-index: 1;
+}
+
+.gallery-item-2 {
+    left: 31%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-3 {
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.1);
+    height: 286.16px;
+    width: 214.62px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.gallery-item-4 {
+    left: 69%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-5 {
+    left: 84%;
+    opacity: 0.7;
+    transform: translateX(-50%);
+}
+
+/* Kotak-kotak produk di brand.html */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: fit-content;
+    margin: 20px 4rem;
+    position: relative;
+}
+
+.tags-container a:hover {
+    color: #fff;
+    background-color: #0a1829;
+}
+
+.tag {
+    padding: 8px 12px;
+    border: 1px solid #0a1829;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #0a1829;
+}
+
+/* Main body di analysis.html */
+.opening {
+    line-height: 25px;
+    margin: 5rem 4rem 8rem 4rem;
+    text-align: justify;
+}
+
+/* Box model artikel */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex; /* Box Model Sejajar Berurutan*/
+    justify-content: space-around;
+}
+
+.content {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+    text-align: left;
+    color: #0a1829;
+}
+
+.container a {
+    font-weight: bold;
+    color: #0a1829;
+}
+
+.content a {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.content a:hover {
+    font-weight: normal;
+}
+
+@media screen and (max-width: 450px) {
+    .container, .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+h3 {
+    font-size: 21px;
+}
+
+/* Supaya gambar ditengah
+.img {
+    display: block;
+    margin: auto;
+} */
+
+/* Main body di us.html */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Bagian kiri */
+.column.middle {
+    width: 52%;
+    margin: 2.5rem 3rem 2rem 4rem;
+    padding: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.clock {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #0a1829;
+    border-bottom: none;
+}
+
+/* Bagian kanan */
+.column.side {
+    width: 23%;
+    margin: 3.5rem 2rem 2rem 3rem;
+    padding: 10px;
+}
+
+.contact {
+    text-align: justify;
+    margin-left: 3px;
+}
+
+.contact i:hover {
+    color: #ffb800;
+}
+
+.contact li, .contact a {
+    color: rgb(76 78 221);
+    text-decoration: none;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+.news {
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+/* Untuk subscribe */
+input[type=text], input[type=submit] {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #0a1829;
+    color: #fff;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+/* Supaya float hilang setelah main body */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 800px) {
+    .column {
+        float: none;
+    }
+
+    .column.middle {
+        width: 100%;
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .column.side {
+        width: 100%;
+        margin: 1rem 0 2rem 2.4rem;
+    }
+}
+
+/* Pesan yang bisa di x */
+.alert {
+    padding: 20px;
+    background-color: #ff9800;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+#more {
+    display: none;
+}
+
+#myBtn {
+    background-color: transparent;
+    border: none;
+    color: rgb(76 78 221);
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    color: #0a1829;
+    padding: 20px 45px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-footer a {
+    text-decoration: none;
+    color: #0a1829;
+}
+
+.navbar-footer a:hover {
+    color: rgb(76 78 221);
+}
+
+/* Untuk bagian yang dibagi 3 */
+.h4 a {
+    color: #0a1829;
+}
+
+.h4 a:hover {
+    color: #ffb800;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #0a1829;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/* Bagian copyright */
+.copyright {
+    background-color: #0a1829;
+    color: #f3f3f3;
+    line-height: 20px;
+    padding: 4px 0 15px 0;
+    margin: 10px -45px -30px -45px;
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: underline solid #f3f3f3;
+    color: #f3f3f3;
+    margin-right: 10px;
+}
+
+.copyright a:hover {
+    color: #ffb800;
+}

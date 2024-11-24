@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Marketing Bee | BeeTeam</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a7b768fb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Navigasi menu -->
+<nav id="navbar">
+  <div class="navbar-judul">
+    <a href="#"><h1>The Marketing Bee</h1></a>
+  </div>
+  
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="brand.html">BeeBrand Info</a>
+    <div class="dropdown"><a href="analysis.html" class="dropbtn">BeeAnalyze</a>
+      <div class="dropdown-content">
+        <a href="swot.html">SWOT Analysis</a>
+        <a href="#">Branding</a>
+        <a href="#">Marketing Strategy</a>
+      </div>
+    </div>
+    <a href="qna.html">BeeTalk</a>
+    <a class="active" href="us.html">BeeTeam</a>
+  </div>
+</nav>
+
+<script type="text/javascript">
+  var lastScrollTop = 0;
+    navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document
+      .documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+      navbar.style.top='-80px';
+    } else {
+      navbar.style.top="0";
+    }
+      lastScrollTop = scrollTop;
+  })
+</script>
+
+<!-- Button untuk scroll ke atas-->
+<button id="scrollToTopBtn" class="scroll-to-top" style="font-size: 30px;">&#11121</button>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+// Memunculkan button jika di scroll sesuai height
+window.onscroll = function () {
+  if (document.body.scrollTop > 185 || document.documentElement.scrollTop > 185) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+// Akan scroll ke atas
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
+
+<!-- Header -->
+<header>
+  <br><br><br><img src="images/header.svg">
+</header>
+
+<!-- Main body -->
+<div class="row">
+  <div class="column middle">
+    <div class="clock">
+      <span id="hours">00</span> :
+      <span id="minutes">00</span> :
+      <span id="seconds">00</span>
+    </div>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0'); // Untuk tampilan angka 2 digit
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+
+        document.getElementById('hours').textContent = hours;
+        document.getElementById('minutes').textContent = minutes;
+        document.getElementById('seconds').textContent = seconds;
+      }
+
+      setInterval(updateClock, 1000); // Supaya waktu terus berjalan
+      updateClock(); // Supaya sesuai dengan jam
+    </script>
+
+    <hr><br>
+    <h2>History of The Marketing Bee</h2>
+    <p><b>The Marketing Bee</b> was started with the goal of becoming a platform that focuses on in-depth discussions on SWOT analysis, branding, and marketing
+      strategies of various brands. Inspired by the desire to help companies and individuals understand the fundamental elements of marketing, <b>The Marketing
+        Bee</b> began this journey in 2024. The name "Bee" was chosen as a symbol of hard work, collaboration, and sweet outcomes—reflecting our passion for
+        providing strategic insights that can be directly applied in the marketing world. As such, <b>The Marketing Bee</b> serves as a strategic guide for
+        entrepreneurs, campaign manager, start-up founder, college students, and marketing professionals.<br><br>
+        We believe marketing is about building long-term relationships through strong brands, not just selling products. Using a data-driven approach, we offer relevant, up-to-date insights to support brand success.</p>
+    
+    <br>
+    <h3 style="text-decoration: underline;">Vision</h3>
+    <p>Become the leading platform in providing insights, analysis, and innovative marketing strategies to help brands thrive and be highly competitive in the global market, while fostering sustainable growth and strategic adaptability in an ever-evolving business landscape.</p>
+    
+    <h3 style="text-decoration: underline;">Mission</h3>
+    <ol>
+      <li><b>Provide Quality Educational Content.</b><br>To provide in-depth and relevant SWOT analysis for each brand, giving a clear picture of their position in the market.</li>
+      <li><b>Inspire Innovative Strategies.</b><br>To help companies to define and implement marketing strategies that increase visibility, attractiveness, and customer loyalty.</li>
+      <li><b>Build Long-Term Relationships with Clients.</b><br>To be a trusted partner for brands in facing dynamic and competitive market challenges, providing innovative solutions to drive growth and success.</li>
+      <li><b>Support Decision Making.</b><br>To create a discussion and collaboration space for marketing professionals and beginners, fostering knowledge and innovation.</li>
+    </ol>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="column side">
+    <h1>Contat Us</h1>
+    <h4>Get in Touch with The Marketing Bee</h4>
+    <div class="contact">
+      <i class="fa fa-envelope"></i> Email: <br><a href="mailto:themarketingbee@gmail.com">themarketingbee@gmail.com</a><br><br>
+      
+      <i class="fa fa-facebook"></i> Facebook: <a href="https://facebook.com/themarketingbee" target="_blank">The Marketing Bee</a><br>
+      <i class="fa fa-instagram"></i> Instagram: <a href="https://instagram.com/themarketingbee" target="_blank">@themarketingbee</a><br>
+      <i class="fa-brands fa-x-twitter"></i> Twitter: <a href="https://x.com/MarketingBee" target="_blank">@MarketingBee</a><br>
+      <i class="fa fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/themarketingbee" target="_blank">The Marketing Bee</a><br><br>
+      
+      <i class="fa-solid fa-location-dot"></i> Our Location: <br>Haji Mawar Street No. 43, Jakarta, Indonesia<br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d579.2726517766481!2d106.86829420008586!3d-6.157787647432961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1732422659562!5m2!1sid!2sid" width="305" height="202.5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <br><br>
+    <h4>Get the Latest Marketing Insights</h4>
+    <p style="text-align: justify; margin-bottom: 2rem;">Subscribe now and never miss out on the latest tips and strategies from <b>The Marketing Bee!</b></p>
+    <div class="news" style="background-color: #f3f3f3">
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Email address" name="mail" required>
+      <label>
+        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+      </label>
+    </div>
+
+    <div class="news">
+      <input type="submit" value="Subscribe">
+    </div>
+  </div>
+</div>
+
+<!-- Lanjutan main body -->
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Warning!</strong> This is an important notification message on the website.
+</div>
+
+<h2 id="privacy" style="margin: 20px 4rem 1rem 4rem;">Privacy Policy</h2>
+<p class="p">At <b>The Marketing Bee</b>, we place the utmost importance on safeguarding your personal information. Our Privacy Policy is designed to clearly explain how we
+  collect, use, protect, and disclose your data when you explore our website—your go-to hub for marketing insights, SWOT analysis, and branding strategies.
+</p>
+
+<br>
+
+<p class="p"><b>What Information Do We Gather?</b><br>We may collect personal details such as:</p>
+  <ul style="margin: 15px 4rem;">
+    <li><b>Name</b> and <b>email addres:</b> Provided through contact forms or subscription requests.</li>
+    <li><b>Usage data:</b> Insights from your interactions with our website.</li>
+  </ul>
+<p class="p">This data helps us tailor your experience and improve our services.</p>
+
+<br>
+
+<p class="p"><b>How Do We Use Your Information?</b><br>
+  The information we collect is used for several important purposes. It allows us to provide you with personalized marketing analysis, tailored insights, and recommendations
+  that align with your interests. We also use your contact information to send you updates, newsletters, and promotional content that we believe may be valuable to you.
+</p>
+
+<p class="p"><span id="dots"></span><span id="more"><br>
+  <b>Your Data, Our Responsibility</b><br>
+    We are committed to protecting your personal information using reasonable securit measures. However, no method of transmission over the Internet or electronic storage is
+    100% secure, and we cannot guarantee absolute security.
+  <br><br>
+
+  <b>Policy Updates and Your Consent</b><br>
+    As we grow and innovate, this Privacy Policy may evolve. Any updates will be reflected here, along with the date of the latest revision. By continuing to use our website,
+    you accept the terms outlined in this policy. If you have any questions or concerns regarding this Privacy Policy or its updates, we encourage you to contact us. We are
+    always happy to address any feedback or inquiries you may have.</span>
+</p>
+
+<button onclick="myFunction()" id="myBtn" style="margin-left: 3.7rem; margin-top: 25px;">Read more..</button>
+
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<br><br>
+<h2 id="terms" style="margin: 20px 4rem 1rem 4rem;">Terms and Conditions</h2>
+<p class="p">By accessing and using our website, you agree to comply with these Terms and Conditions. If you do not agree with these terms, please refrain from using our site.
+  You are permitted to use this website only for lawful purposes and agree not to engage in any activity that could harm, disrupt, or interfere with its operation, such as
+  introducing malware, viruses, or other harmful code. All content on <b>The Marketing Bee</b>, including text, graphics, logos, images, and other materials, is the property of
+  <b>The Marketing Bee</b> or its licensors and is protected by copyright and intellectual property laws. As such, you may not reproduce, modify, or distribute any content without
+  prior written consent from us.
+  <br><br> These Terms and Conditions are governed by the laws of the jurisdiction in which <b>The Marketing Bee</b> operates. Any disputes arising from these
+  terms will be resolved in the appropriate courts.</p>
+
+<br><br><br>
+<!-- Footer -->
+<footer class="footer">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div>
+      <img src="images/icon.png" alt="BizBoosters Logo" style="width: 90px; margin-top: 20px;">
+      <p style="margin-top: 10px; text-align: justify;"><i>Enhance Your Biz with Expert Guidance in SWOT Analysis, <br> Branding, and Marketing Strategies.
+        Upgrading Your <br> Competitive Edge and Achieve Sustainable Growth Now!</i></p>
+    </div>
+
+    <div class="navbar-footer">
+      <h4>Find More</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="brand.html">BeeBrand Info</a></li>
+        <li><a href="analysis.html">BeeAnalyze</a></li>
+        <li><a href="qna.html">BeeTalk</a></li>
+        <li><a href="us.html">BeeTeam</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-footer">
+    <h4 class="h4"><a href="analysis.html">BeeAnalyze</a></h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="swot.html">SWOT Analysis</a></li>
+        <li><a href="analysis.html">Branding</a></li>
+        <li><a href="analysis.html">Marketing Strategy</a></li>
+      </ul>
+    </div>
+
+    <div class="h4">
+      <h4>Follow Us</h4>
+      <a href="https://www.instagram.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+      <a href="https://x.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+      <a href="https://web.facebook.com/UniqloIndonesiaOfficial" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+      <a href="https://www.tiktok.com/@uniqloindonesia" target="_blank"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+      <a href="https://www.youtube.com/@UNIQLOINDONESIAOFFICIAL" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+    </div>
+  </div>
+
+<!-- Bagian Hak Cipta -->
+  <div class="copyright">
+      <h4 style="font-size: 0.95rem;">© 2024. Design by Dhavina Putri Velissa | All Rights Reserved.<br><span style="font-weight: normal;">Visit the <a href="https://www.uniqlo.com"
+        target="_blank" style="color: #f3f3f3; text-decoration: none;">Official Uniqlo Website</a></span></h4>
+      <a href="us.html#privacy">Privacy Policy</a>
+      <a href="us.html#terms">Terms and Conditions</a>
+  </div>
+</footer>
+</body>
+</html>

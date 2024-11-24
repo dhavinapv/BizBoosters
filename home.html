@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Marketing Bee</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a7b768fb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Navigasi menu -->
+<nav id="navbar">
+  <div class="navbar-judul">
+    <a href="#"><h1>The Marketing Bee</h1></a>
+  </div>
+  
+  <div class="navbar">
+    <a class="active" href="home.html">Home</a>
+    <a href="brand.html">BeeBrand Info</a>
+    <div class="dropdown"><a href="analysis.html" class="dropbtn">BeeAnalyze</a>
+      <div class="dropdown-content">
+        <a href="swot.html">SWOT Analysis</a>
+        <a href="#">Branding</a>
+        <a href="#">Marketing Strategy</a>
+      </div>
+    </div>
+    <a href="qna.html">BeeTalk</a>
+    <a href="us.html">BeeTeam</a>
+  </div>
+</nav>
+
+<script type="text/javascript">
+  var lastScrollTop = 0;
+    navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document
+      .documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+      navbar.style.top='-80px';
+    } else {
+      navbar.style.top="0";
+    }
+      lastScrollTop = scrollTop;
+  })
+</script>
+
+<!-- Button untuk scroll ke atas-->
+<button id="scrollToTopBtn" class="scroll-to-top" style="font-size: 30px;">&#11121</button>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+// Memunculkan button jika di scroll sesuai height
+window.onscroll = function () {
+  if (document.body.scrollTop > 185 || document.documentElement.scrollTop > 185) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+// Akan scroll ke atas
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
+
+<!-- Header -->
+<header>
+  <br><br><br><img src="images/header.svg">
+</header>
+
+<br><br>
+<!-- Main body -->
+<h1 style="margin-left: 4rem;">Welcome to The Marketing Bee!</h1>
+<p class="p">Find deep insights into the world of marketing with <b>The Marketing Bee!</b> We are here to help you understand the strengths, weaknesses, opportunities and threats in your industry
+  through SWOT analysis, branding and effective marketing strategies. With innovative ideas and expert analysis, we guide you to create smarter and more successful strategies.</p><br>
+<p class="p">Whether you're a brand looking to strengthen your identity or a marketer looking for applicable insights, <b>The Marketing Bee</b> is here to guide you with expert analysis and
+  innovative approaches that push real results. Together, we can build better strategies, one insight at a time! To support your journey in understanding the world of marketing, we also provide
+  references from relevant and in-depth YouTube videos, such as:</p><br>
+
+<iframe width="453.6" height="239.4" src="https://www.youtube.com/embed/4ajmfzj9G1g?si=gXVmEqE1xsHeiLdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+  encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin-left: 4rem; float: left; padding-right: 30px;"></iframe>
+<p class="p">In the first video, you will learn how to craft a compelling brand story that resonates with audiences, as well as the importance of consistency and emotional attraction to differentiate
+  your brand in a competitive market. You'll also learn to leverage digital technology to create a more effective and efficient marketing strategy, including creative approaches to branding, the use
+  of social media, and measuring campaign success through data analytics.</p><br><br>
+
+<iframe width="453.6" height="239.4" src="https://www.youtube.com/embed/3KX3GRRYnko?si=mP0-AsA8d4uK3sz5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin-right: 4rem; float: right; padding-left: 30px;"></iframe>
+<br><br><br>
+<p class="p">The second video provides a practical explanation of how to conduct a SWOT analysis to identify internal strengths, address weaknesses, capitalize on opportunities and manage threats
+  in the market. You will also learn important elements such as brand visuals, messaging, and customer engagement strategies that enable you to connect more effectively with your target audience.</p>
+
+<!-- Lanjutan main body -->
+<h1 class="h1">Get to Know More</h1><br>
+<h4 style="margin-left: 4rem; font-size: 19px;">Marketing Analysis of Uniqlo Brand and its Featured Products</h4>
+<p class="p">On this occasion, we will discuss in depth about one of the leading brands in the fashion world, Uniqlo. As a global company known for
+  its high-quality clothing products and simple but stylish designs, Uniqlo has successfully combined innovation and efficiency in every product
+  they offered. Below, we present some of Uniqlo's standout products that reflect the brand's effective marketing strategies and success in responding
+  to market needs.</p>
+
+<div class="product">
+  <div class="best">
+    <img src="images/ut.png" alt="Avatar">
+    <h3 class="overlay">UT (Uniqlo T-shirt)</h3>
+  </div>
+
+  <div class="best">
+    <img src="images/heattech.png" alt="Avatar">
+    <h3 class="overlay">HEATTECH</h3>
+  </div>
+
+  <div class="best">
+    <img src="images/blocktech.png" alt="Avatar">
+    <h3 class="overlay">BlockTech</h3>
+  </div>
+
+  <div class="best">
+    <img src="images/lifewear.avif" alt="Avatar">
+    <h3 class="overlay">Lifewear</h3>
+  </div>
+</div>
+
+<br><br>
+<!-- Footer -->
+<footer class="footer">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div>
+      <img src="images/icon.png" alt="BizBoosters Logo" style="width: 90px; margin-top: 20px;">
+      <p style="margin-top: 10px; text-align: justify;"><i>Enhance Your Biz with Expert Guidance in SWOT Analysis, <br> Branding, and Marketing Strategies.
+        Upgrading Your <br> Competitive Edge and Achieve Sustainable Growth Now!</i></p>
+    </div>
+
+    <div class="navbar-footer">
+      <h4>Find More</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="brand.html">BeeBrand Info</a></li>
+        <li><a href="analysis.html">BeeAnalyze</a></li>
+        <li><a href="qna.html">BeeTalk</a></li>
+        <li><a href="us.html">BeeTeam</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-footer">
+    <h4 class="h4"><a href="analysis.html">BeeAnalyze</a></h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="swot.html">SWOT Analysis</a></li>
+        <li><a href="analysis.html">Branding</a></li>
+        <li><a href="analysis.html">Marketing Strategy</a></li>
+      </ul>
+    </div>
+
+    <div class="h4">
+      <h4>Follow Us</h4>
+      <a href="https://www.instagram.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+      <a href="https://x.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+      <a href="https://web.facebook.com/UniqloIndonesiaOfficial" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+      <a href="https://www.tiktok.com/@uniqloindonesia" target="_blank"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+      <a href="https://www.youtube.com/@UNIQLOINDONESIAOFFICIAL" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+    </div>
+  </div>
+
+<!-- Bagian Hak Cipta -->
+  <div class="copyright">
+      <h4 style="font-size: 0.95rem;">© 2024. Design by Dhavina Putri Velissa | All Rights Reserved.<br><span style="font-weight: normal;">Visit the <a href="https://www.uniqlo.com"
+        target="_blank" style="color: #f3f3f3; text-decoration: none;">Official Uniqlo Website</a></span></h4>
+      <a href="us.html#privacy">Privacy Policy</a>
+      <a href="us.html#terms">Terms and Conditions</a>
+  </div>
+</footer>
+</body>
+</html>

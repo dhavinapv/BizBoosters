@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Marketing Bee | BeeTalk</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="qna.css">
+    <script src="https://kit.fontawesome.com/2a7b768fb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Navigasi menu -->
+<nav id="navbar">
+  <div class="navbar-judul">
+    <a href="#"><h1>The Marketing Bee</h1></a>
+  </div>
+  
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="brand.html">BeeBrand Info</a>
+    <div class="dropdown"><a href="analysis.html" class="dropbtn">BeeAnalyze</a>
+      <div class="dropdown-content">
+        <a href="swot.html">SWOT Analysis</a>
+        <a href="#">Branding</a>
+        <a href="#">Marketing Strategy</a>
+      </div>
+    </div>
+    <a class="active" href="qna.html">BeeTalk</a>
+    <a href="us.html">BeeTeam</a>
+  </div>
+</nav>
+
+<script type="text/javascript">
+  var lastScrollTop = 0;
+    navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document
+      .documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+      navbar.style.top='-80px';
+    } else {
+      navbar.style.top="0";
+    }
+      lastScrollTop = scrollTop;
+  })
+</script>
+
+<!-- Button untuk scroll ke atas-->
+<button id="scrollToTopBtn" class="scroll-to-top" style="font-size: 30px;">&#11121</button>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+// Memunculkan button jika di scroll sesuai height
+window.onscroll = function () {
+  if (document.body.scrollTop > 185 || document.documentElement.scrollTop > 185) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+// Akan scroll ke atas
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
+
+<!-- Header -->
+<header>
+  <br><br><br><img src="images/header.svg">
+</header>
+
+<!-- Main body -->
+<h2>Welcome to BeeTalk Q&A!</h2>
+<p class="p">Get the answers you’re looking for in Beetalk’s Q&A section.</p>
+
+<!-- Search bar -->
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search keywords.." title="Search">
+  <button onclick="searchFunction()"><i class="fa-solid fa-magnifying-glass"></i></button>
+</div>
+
+<script>
+  function searchFunction() {
+  let input = document.getElementById("searchInput").value;
+  
+  if(input === "") {
+    alert("Masukkan kata kunci untuk mencari.");
+  } else {
+    alert("Mencari: " + input); // Hasil pencarian yang sudah pernah ditulis akan muncul
+  }
+}
+</script>
+
+<br><br><br>
+<!-- Lanjutan main body -->
+<h3 style="margin: 25px 5rem; text-align: center; font-size: 20px;">FAQ (Frequently Asked Questions)</h3>
+<button class="accordion">What is branding, and why is it important for my business?</button>
+<div class="panel">
+  <p>Branding is the process of creating a unique identity for your business, including its logo, message, and values. It helps your business stand out in the market, build trust with customers, and create a lasting impression. A strong brand can drive customer loyalty and differentiate you from competitors.</p>
+</div>
+
+<button class="accordion">How can a SWOT analysis help my business?</button>
+<div class="panel">
+  <p>SWOT analysis (Strengths, Weaknesses, Opportunities, and Threats) is a strategic tool that helps you understand your business better. It identifies areas where you excel, areas for improvement, potential opportunities, and external threats. By analyzing these factors, you can make informed decisions and develop effective strategies for growth.</p>
+</div>
+
+<button class="accordion">What is the difference between branding and marketing?</button>
+<div class="panel">
+  <p>Branding focuses on building your business's identity, including your values, personality, and customer perception. Marketing, on the other hand, involves promoting your products or services to your target audience using various strategies like advertising, social media, and campaigns. Simply put, branding is who you are, and marketing is how you tell your story.</p>
+</div>
+
+<button class="accordion">How can I get started with improving my branding and marketing?</button>
+<div class="panel">
+  <p>Start by understanding your target audience and defining your brand identity. Conduct a SWOT analysis to evaluate your current position, then create a strategic marketing plan. If you need guidance, explore our articles and resources to learn more or contact our team for personalized assistance.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<!-- Bagian float testimoni -->
+<section class="testimonials">
+  <h2 style="font-size: 25px;">Online Testimonials</h2>
+  <div class="testimonial-card">
+    <div class="testimonial">
+      <p class="quote" style="font-size: 4rem;">“</p>
+      <p><b>Sarah L.,</b> <i>Startup Founder</i></p>
+      <p>This website has completely transformed the way I view branding and marketing strategies. The articles are insightful and packed with actionable tips that helped me improve my business approach!</p>
+      <p class="quote" style="font-size: 4rem; text-align: right;">”</p>
+    </div>
+
+    <div class="testimonial">
+      <p class="quote" style="font-size: 4rem;">“</p>
+      <p><b>Emily R.,</b> <i>Small Business Owner</i></p>
+      <p>I loved the detailed explanation of branding concepts. The examples provided made it easy to understand how to build a strong brand identity. Highly recommended for entrepreneurs!</p>
+      <p class="quote" style="font-size: 4rem; text-align: right;">”</p>
+    </div>
+              
+    <div class="testimonial">
+      <p class="quote" style="font-size: 4rem;">“</p>
+      <p><b>Michael T.,</b> <i>Freelance Designer</i></p>
+      <p>As a beginner in the world of marketing, I found the articles here very accessible and easy to understand. They broke down complex topics into simple steps, making it easier for me to apply them.</p>
+      <p class="quote" style="font-size: 4rem; text-align: right;">”</p>
+    </div>
+  </div>
+</section>
+
+<br><br>
+<!-- Formulir -->
+<hr style="border: 1px solid #f3f3f3; margin: 0 2.5rem;"><br>
+<h3 style="text-align: center;">Let Bee Help You! Submit Your Question or FeedBack Through the Form Below.</h3>
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-18">
+      <label for="fname">Name</label>
+    </div>
+    <div class="col-82">
+      <input type="text" id="fname" name="firstname" placeholder="Your full name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-18">
+      <label for="email">Email</label>
+    </div>
+    <div class="col-82">
+      <input type="email" id="lname" name="email" placeholder="Your email address..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-18">
+      <label for="country">Job Type</label>
+    </div>
+    <div class="col-82">
+      <select id="country" name="country">
+        <option value="owner">Entrepreneur/Business Owner</option>
+        <option value="manager">Campaign Manager</option>
+        <option value="marketer">Marketer</option>
+        <option value="startup">Start-up Founder</option>
+        <option value="researcher">Market Researcher</option>
+        <option value="students">College Students</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-18">
+      <label for="subject">Questions or FeedBack</label>
+    </div>
+    <div class="col-82">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px; padding-top: 11px;"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Send the Questions">
+  </div>
+  </form>
+</div>
+
+<br><br><br>
+<!-- Footer -->
+<footer class="footer">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div>
+      <img src="images/icon.png" alt="BizBoosters Logo" style="width: 90px; margin-top: 20px;">
+      <p style="margin-top: 10px; text-align: justify;"><i>Enhance Your Biz with Expert Guidance in SWOT Analysis, <br> Branding, and Marketing Strategies.
+        Upgrading Your <br> Competitive Edge and Achieve Sustainable Growth Now!</i></p>
+    </div>
+
+    <div class="navbar-footer">
+      <h4>Find More</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="brand.html">BeeBrand Info</a></li>
+        <li><a href="analysis.html">BeeAnalyze</a></li>
+        <li><a href="qna.html">BeeTalk</a></li>
+        <li><a href="us.html">BeeTeam</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-footer">
+    <h4 class="h4"><a href="analysis.html">BeeAnalyze</a></h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="swot.html">SWOT Analysis</a></li>
+        <li><a href="analysis.html">Branding</a></li>
+        <li><a href="analysis.html">Marketing Strategy</a></li>
+      </ul>
+    </div>
+
+    <div class="h4">
+      <h4>Follow Us</h4>
+      <a href="https://www.instagram.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+      <a href="https://x.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+      <a href="https://web.facebook.com/UniqloIndonesiaOfficial" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+      <a href="https://www.tiktok.com/@uniqloindonesia" target="_blank"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+      <a href="https://www.youtube.com/@UNIQLOINDONESIAOFFICIAL" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+    </div>
+  </div>
+
+<!-- Bagian Hak Cipta -->
+  <div class="copyright">
+      <h4 style="font-size: 0.95rem;">© 2024. Design by Dhavina Putri Velissa | All Rights Reserved.<br><span style="font-weight: normal;">Visit the <a href="https://www.uniqlo.com"
+        target="_blank" style="color: #f3f3f3; text-decoration: none;">Official Uniqlo Website</a></span></h4>
+      <a href="us.html#privacy">Privacy Policy</a>
+      <a href="us.html#terms">Terms and Conditions</a>
+  </div>
+</footer>
+</body>
+</html>

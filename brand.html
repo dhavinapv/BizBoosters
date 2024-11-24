@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Marketing Bee | BeeBrand Info</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="brand.js">
+    <script src="https://kit.fontawesome.com/2a7b768fb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Navigasi menu -->
+<nav id="navbar">
+  <div class="navbar-judul">
+    <a href="#"><h1>The Marketing Bee</h1></a>
+  </div>
+  
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a class="active" href="brand.html">BeeBrand Info</a>
+    <div class="dropdown"><a href="analysis.html" class="dropbtn">BeeAnalyze</a>
+      <div class="dropdown-content">
+        <a href="swot.html">SWOT Analysis</a>
+        <a href="#">Branding</a>
+        <a href="#">Marketing Strategy</a>
+      </div>
+    </div>
+    <a href="qna.html">BeeTalk</a>
+    <a href="us.html">BeeTeam</a>
+  </div>
+</nav>
+
+<script type="text/javascript">
+  var lastScrollTop = 0;
+    navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document
+      .documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+      navbar.style.top='-80px';
+    } else {
+      navbar.style.top="0";
+    }
+      lastScrollTop = scrollTop;
+  })
+</script>
+
+<!-- Button untuk scroll ke atas-->
+<button id="scrollToTopBtn" class="scroll-to-top" style="font-size: 30px;">&#11121</button>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+// Memunculkan button jika di scroll sesuai height
+window.onscroll = function () {
+  if (document.body.scrollTop > 185 || document.documentElement.scrollTop > 185) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+// Akan scroll ke atas
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
+
+<!-- Header -->
+<header>
+  <br><br><br><img src="images/header.svg">
+</header>
+
+<br><br>
+<!-- Gallery -->
+<div class="gallery">
+  <div class="gallery-container">
+    <img class="gallery-item gallery-item-1" src="images/bayi.png" data-index="1">
+    <img class="gallery-item gallery-item-2" src="images/blazer.png" data-index="2">
+    <img class="gallery-item gallery-item-3" src="images/kaos.png" data-index="3">
+    <img class="gallery-item gallery-item-4" src="images/cardigan.png" data-index="4">
+    <img class="gallery-item gallery-item-5" src="images/dress.png" data-index="5">
+  </div>
+</div>
+
+
+<br><br><br>
+<!-- Main body -->
+<h2 style="margin-left: 4rem; margin-top: -5rem;">History of Uniqlo</h2>
+<p class="p"><span class="drop-cap">U</span>niqlo is a Japanese casual wear brand founded in 1984 by Tadashi Yanai. The name Uniqlo is an acronym for
+  “Unique Clothing,” which represents a focus on simple, comfortable, and quality casual clothing. The first store opened in Hiroshima, Japan, and since
+  then the brand has grown rapidly through the “SPA” (Specialty Store Retailer of Private Label Apparel) concept, which allows Uniqlo to control the
+  entire production process to keep quality and prices competitive.
+<br><br>
+  In 2001, Uniqlo began its international expansion by opening a store in London, followed by its presence in various countries including Indonesia in
+  2013. The brand is known for its innovative material technologies such as Heattech and AIRism, which create functional clothing for various weather
+  conditions. With the philosophy of “LifeWear,” Uniqlo is committed to providing relevant clothing for everyday life, prioritizing minimalism and
+  flexibility in its designs.
+<br><br>
+  Uniqlo also supports sustainability through its “Re.Uniqlo” clothing recycling program and collaborates with famous designers and artists to create
+  unique collections. Until now, Uniqlo has become one of the largest clothing brands in the world, with more than 2,400 stores in various countries.
+</p>
+
+<br>
+<h2 style="margin-left: 4rem;">Vision and Mission of Uniqlo</h2>
+<p class="p"><b>Uniqlo's vision:</b> To unlock the power of clothing with a focus on product, supply chain, employees, stores and communities, we
+  will change the world for the better through our business.<br><b>Uniqlo's mission:</b> To continuously provide fashionable, high quality, basic
+  casual wear at the lowest pricesin the market–casual wear that anybody can wear whenever and wherever, focus on lowcost operation and directly link
+  production and marketing by the shortest and cheapest means. Provide an environment where global standard employees can happily work.</p>
+
+<br><br>
+<h2 style="margin-left: 4rem;">Products of Uniqlo</h2>
+<p class="p"></p>
+<div class="tags-container">
+  <a href="https://www.uniqlo.com/id/en/women/tops" target="_blank" class="tag">T-Shirts, Bratops, & Fleece</a>
+  <a href="https://www.uniqlo.com/id/en/men/shirts-and-polo-shirts" target="_blank" class="tag">Polo Shirts & Shirts</a>
+  <a href="https://www.uniqlo.com/id/en/women/shirts-and-blouses" target="_blank" class="tag">Shirts & Blouses</a>
+  <a href="https://www.uniqlo.com/id/en/men/bottoms" target="_blank" class="tag">Bottoms</a>
+  <a href="https://www.uniqlo.com/id/en/men/outerwear" target="_blank" class="tag">Outerwear</a>
+  <a href="https://www.uniqlo.com/id/en/women/sweaters-and-cardigans" target="_blank" class="tag">Knitwear</a>
+  <a href="https://www.uniqlo.com/id/en/women/skirts-and-dresses" target="_blank" class="tag">Skirts & Dresses</a>
+  <a href="https://www.uniqlo.com/id/en/kids/dresses" target="_blank" class="tag">Dresses & Jumpsuits</a>
+  <a href="https://www.uniqlo.com/id/en/women/loungewear" target="_blank" class="tag">Loungewear</a>
+  <a href="https://www.uniqlo.com/id/en/women/innerwear" target="_blank" class="tag">Innerwear</a>
+  <a href="https://www.uniqlo.com/id/en/women/accessories" target="_blank" class="tag">Accessories</a>
+  <a href="https://www.uniqlo.com/id/en/women/modest-wear" target="_blank" class="tag">Modest Wear</a>
+  <a href="https://www.uniqlo.com/id/en/men/sport-utility-wear" target="_blank" class="tag">SPORT UTILITY WEAR</a>
+  <a href="https://www.uniqlo.com/id/en/men/uv-protection" target="_blank" class="tag">UV Protection</a>
+  <a href="https://www.uniqlo.com/id/en/baby/newborn" target="_blank" class="tag">Newborn (0-1 Year)</a>
+  <a href="https://www.uniqlo.com/id/en/baby/toddler" target="_blank" class="tag">Toddler (1-4 Year)</a>
+  <a href="https://www.uniqlo.com/id/en/men/lifewear-collection" target="_blank" class="tag">2024 Fall/Winter</a>
+  <a href="https://www.uniqlo.com/id/en/men/outerwear/ultra-light-down" target="_blank" class="tag">PUFFTECH</a>
+  <a href="https://www.uniqlo.com/id/en/men/heattech" target="_blank" class="tag">HEATTECH</a>
+  <a href="https://www.uniqlo.com/id/en/women/airism" target="_blank" class="tag">AIRism</a>
+  <a href="https://www.uniqlo.com/id/en/men/tops/ut-graphic-tees" target="_blank" class="tag">UT Graphic T-Shirts</a>
+  <a href="https://www.uniqlo.com/id/en/feature/new/kids?path=15120&flagCodes=salesStart%20newSKU" target="_blank" class="tag">New Arrivals</a>
+  <a href="https://www.uniqlo.com/id/en/feature/sale/kids?path=15120&flagCodes=discount" target="_blank" class="tag">Sale</a>
+  <a href="https://www.uniqlo.com/id/en/spl/ranking/kids" target="_blank" class="tag">Best Sellers</a>
+  <a href="https://www.uniqlo.com/id/en/spl/extra-size" target="_blank" class="tag">Extra Sizes</a>
+</div>
+
+<br><br><br>
+<!-- Footer -->
+<footer class="footer">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div>
+      <img src="images/icon.png" alt="BizBoosters Logo" style="width: 90px; margin-top: 20px;">
+      <p style="margin-top: 10px; text-align: justify;"><i>Enhance Your Biz with Expert Guidance in SWOT Analysis, <br> Branding, and Marketing Strategies.
+        Upgrading Your <br> Competitive Edge and Achieve Sustainable Growth Now!</i></p>
+    </div>
+
+    <div class="navbar-footer">
+      <h4>Find More</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="brand.html">BeeBrand Info</a></li>
+        <li><a href="analysis.html">BeeAnalyze</a></li>
+        <li><a href="qna.html">BeeTalk</a></li>
+        <li><a href="us.html">BeeTeam</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-footer">
+    <h4 class="h4"><a href="analysis.html">BeeAnalyze</a></h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="swot.html">SWOT Analysis</a></li>
+        <li><a href="analysis.html">Branding</a></li>
+        <li><a href="analysis.html">Marketing Strategy</a></li>
+      </ul>
+    </div>
+
+    <div class="h4">
+      <h4>Follow Us</h4>
+      <a href="https://www.instagram.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+      <a href="https://x.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+      <a href="https://web.facebook.com/UniqloIndonesiaOfficial" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+      <a href="https://www.tiktok.com/@uniqloindonesia" target="_blank"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+      <a href="https://www.youtube.com/@UNIQLOINDONESIAOFFICIAL" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+    </div>
+  </div>
+
+<!-- Bagian Hak Cipta -->
+  <div class="copyright">
+      <h4 style="font-size: 0.95rem;">© 2024. Design by Dhavina Putri Velissa | All Rights Reserved.<br><span style="font-weight: normal;">Visit the <a href="https://www.uniqlo.com"
+        target="_blank" style="color: #f3f3f3; text-decoration: none;">Official Uniqlo Website</a></span></h4>
+      <a href="us.html#privacy">Privacy Policy</a>
+      <a href="us.html#terms">Terms and Conditions</a>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Marketing Bee | BeeAnalyze</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a7b768fb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Navigasi menu -->
+<nav id="navbar">
+  <div class="navbar-judul">
+    <a href="#"><h1>The Marketing Bee</h1></a>
+  </div>
+  
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="brand.html">BeeBrand Info</a>
+    <div class="dropdown"><a href="analysis.html" class="dropbtn active">BeeAnalyze</a>
+      <div class="dropdown-content">
+        <a href="swot.html">SWOT Analysis</a>
+        <a href="#">Branding</a>
+        <a href="#">Marketing Strategy</a>
+      </div>
+    </div>
+    <a href="qna.html">BeeTalk</a>
+    <a href="us.html">BeeTeam</a>
+  </div>
+</nav>
+
+<script type="text/javascript">
+  var lastScrollTop = 0;
+    navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document
+      .documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+      navbar.style.top='-80px';
+    } else {
+      navbar.style.top="0";
+    }
+      lastScrollTop = scrollTop;
+  })
+</script>
+
+<!-- Button untuk scroll ke atas-->
+<button id="scrollToTopBtn" class="scroll-to-top" style="font-size: 30px;">&#11121</button>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+// Memunculkan button jika di scroll sesuai height
+window.onscroll = function () {
+  if (document.body.scrollTop > 185 || document.documentElement.scrollTop > 185) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+// Akan scroll ke atas
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
+
+<!-- Header -->
+<header>
+  <br><br><br><img src="images/header.svg">
+</header>
+
+<!-- Main body -->
+<p class="opening">
+  <span class="drop-cap">M</span>arketing analysis is an essential step to understanding market trends, consumer behavior, and competitor strengths in an evolving industry. Through a data-oriented
+  approach, we identify opportunities and challenges that can impact your business strategy. By gaining deep insights from market analysis, you can make more informed and effective choices, maximize
+  your competitive advantage, and improve efficiency in marketing your products or services. Moreover, marketing analysis helps to uncover emerging patterns, customer preferences, and gaps in the
+  market, enabling you to stay ahead of industry shifts. With the right tools and expertise, it allows businesses to refine their value propositions, optimize their marketing channels, and develop
+  more personalized campaigns that resonate with target audiences. Join us to build a marketing strategy that is better informed, more targeted, and more competitive, ensuring long-term growth and
+  success in an ever-changing market landscape.
+</p>
+
+<h2 style="text-align: center;">&#129083 Check Out Articles Related to Marketing Analysis &#129083</h2>
+<section class="container">
+  <div class="content">
+    <h3><a href="swot.html">SWOT Analysis of Uniqlo: Understanding the Brand's Competitive Advantage</a></h3>
+    <p><span style="font-weight: normal;">By</span> <a href="us.html" style="color: rgb(76 78 221); font-weight: normal;">BeeTeam</a> - 15 November 2024</p><br>
+    <img src="images/swot.svg" style="width: 220px; height: 150px;"><br>
+    <p class="text">SWOT analysis is a framework for assessing an organization's internal and external factors to support strategic decision-making.</p><br>
+    <a href="swot.html" style="text-decoration: none;">Read More ››</a>
+</div>
+
+<div class="content">
+    <h3>Uniqlo's Brand Identity: Crafting a Global Fashion Powerhouse</h3>
+    <p style="font-weight: normal; font-size: 18px; letter-spacing: 0.5px;"><i>COMING SOON</i></p><br>
+    <img src="images/branding.svg" style="width: 220px; height: 150px;"><br>
+    <p style="font-weight: normal;">Branding is more than just a logo or slogan, it is the very essence of how a business is being perceived by its audience.
+      A solid brand will create a unique identity that differentiates your business in a crowded marketplace, builds trust, and an emotional connection with customers.</p>
+</div>
+
+<div class="content">
+    <h3>Exploring Uniqlo's Market Strategy: Segmentation, Targeting, and Positioning</h3>
+    <p style="font-weight: normal; font-size: 18px; letter-spacing: 0.5px;"><i>COMING SOON</i></p><br>
+    <img src="images/marketing.svg" style="width: 220px; height: 150px;"><br>
+    <p style="font-weight: normal;">Businesses are always evolving, and the right marketing strategy is key to making your brand stand out from the competition.
+      Marketing analysis not only helps understand customer needs, but also provides deep insights into market trends, consumer behavior, and new opportunities.</p>
+</div>
+</div>
+</section>
+
+<br><br><br>
+<!-- Footer -->
+<footer class="footer">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div>
+      <img src="images/icon.png" alt="BizBoosters Logo" style="width: 90px; margin-top: 20px;">
+      <p style="margin-top: 10px; text-align: justify;"><i>Enhance Your Biz with Expert Guidance in SWOT Analysis, <br> Branding, and Marketing Strategies.
+        Upgrading Your <br> Competitive Edge and Achieve Sustainable Growth Now!</i></p>
+    </div>
+
+    <div class="navbar-footer">
+      <h4>Find More</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="brand.html">BeeBrand Info</a></li>
+        <li><a href="analysis.html">BeeAnalyze</a></li>
+        <li><a href="qna.html">BeeTalk</a></li>
+        <li><a href="us.html">BeeTeam</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-footer">
+    <h4 class="h4"><a href="analysis.html">BeeAnalyze</a></h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="swot.html">SWOT Analysis</a></li>
+        <li><a href="analysis.html">Branding</a></li>
+        <li><a href="analysis.html">Marketing Strategy</a></li>
+      </ul>
+    </div>
+
+    <div class="h4">
+      <h4>Follow Us</h4>
+      <a href="https://www.instagram.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+      <a href="https://x.com/uniqloindonesia" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+      <a href="https://web.facebook.com/UniqloIndonesiaOfficial" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+      <a href="https://www.tiktok.com/@uniqloindonesia" target="_blank"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+      <a href="https://www.youtube.com/@UNIQLOINDONESIAOFFICIAL" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+    </div>
+  </div>
+
+<!-- Bagian Hak Cipta -->
+  <div class="copyright">
+      <h4 style="font-size: 0.95rem;">© 2024. Design by Dhavina Putri Velissa | All Rights Reserved.<br><span style="font-weight: normal;">Visit the <a href="https://www.uniqlo.com"
+        target="_blank" style="color: #f3f3f3; text-decoration: none;">Official Uniqlo Website</a></span></h4>
+      <a href="us.html#privacy">Privacy Policy</a>
+      <a href="us.html#terms">Terms and Conditions</a>
+  </div>
+</footer>
+</body>
+</html>

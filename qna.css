@@ -1,0 +1,382 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    color: #0a1829;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        width: 100%;
+    }
+}
+
+/* Main body */
+h2 {
+    margin: 6rem 4rem 2rem 4rem;
+    text-align: center;
+    letter-spacing: 0.7px;
+    line-height: 25px;
+    font-size: 25px;
+}
+
+.p {
+    margin: 1rem 4rem;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* Navigasi menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    margin: 0 -30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    position: fixed;
+    transition: all 300ms ease-in-out;
+    height: 80px;
+}
+
+.navbar-judul a {
+    color: #0a1829;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #0a1829;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin: 0.5em;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 2px;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navbar a:hover:not(.active) {
+    color:  rgb(76 78 221);
+}
+
+.navbar a.active {
+    color: rgb(76 78 221);
+    font-weight: 1000;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Dropdown navbar */
+.dropbtn {
+    color: #ffb800;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #0a1829;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover
+.dropdown-content {
+    display: grid;
+}
+
+/* Button untuk scroll ke atas */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Untuk sembunyikan tombol */
+    color: #0a1829;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    background-color: transparent;
+    color: rgb(76 78 221);
+}
+
+/* Search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: -1rem;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 500px;
+    border: 2px solid #0a1829;
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #0a1829;
+    border-left: none;
+    background-color: #0a1829;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Sembunyiin FAQ */
+.accordion {
+    background-color: #fff;
+    color: #0a1829;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    cursor: pointer;
+    padding: 12px;
+    width: 84%;
+    height: fit-content;
+    margin: 0 6rem;
+    border-bottom: 0.5px solid #0a1829;
+    border-top: none;
+    border-right: none;
+    border-radius: 0;
+    text-align: left;
+    transition: 0.4s;
+}
+
+.accordion:after {
+    content: '\002B'; /* Simbol plus */
+    color: #0a1829;
+    font-weight: bolder;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion .active:after {
+    content: "\2212"; /* Simbol min */
+}
+
+.panel {
+    text-align: justify;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; /* Transisi untuk memunculkan konten */
+    margin: 0 10rem 0 6rem;
+}
+
+/* Float online testimoni */
+.testimonials {
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 4rem;
+}
+
+.testimonials h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+/* Untuk menjadikan 3 box model sejajar */
+.testimonial-card {
+    display: flex;
+    gap: 20px; /* Jarak antar box model */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 340px;
+    text-align: justify;
+    position: relative;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.testimonial p strong {
+    font-size: 1.1rem;
+}
+
+.quote {
+    color: #ffb800;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+
+/* Form */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    padding: 22px;
+    margin: 0 10rem 1em 10rem;
+    line-height: 25px;
+    font-size: medium;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #0a1829;
+    border-radius: 4px;
+    letter-spacing: 0.7px;
+    line-height: 19px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+input[type=text], input[type=email], textarea {
+    padding-left: 12px;
+    
+}
+
+label {
+    display: inline-block; 
+}
+
+input[type=submit] {
+    background-color: #0a1829;
+    color: #fff;
+    opacity: 1;
+    transition: 0.3s;
+    border: 1px solid #0a1829;
+    padding: 9px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    letter-spacing: 0.7px;
+    line-height: 25px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+input[type=submit]:hover {
+    opacity: 0.7;
+}
+
+/* Panjang pertanyaan form */
+.col-18 {
+    float: left;
+    width: 18%;
+    margin-top: 6px;
+}
+
+/* Panjang jawaban form */
+.col-82 {
+    float: left;
+    width: 82%;
+    margin-top: 6px;
+}
+
+/* Supaya float hilang setelah form */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 500px) {
+  .container, .col-15, .col-85, input[type=submit] {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    color: #0a1829;
+    padding: 20px 45px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-footer a {
+    text-decoration: none;
+    color: #0a1829;
+}
+
+.navbar-footer a:hover {
+    color: rgb(76 78 221);
+}
+
+/* Untuk bagian yang dibagi 3 */
+.h4 a {
+    color: #0a1829;
+}
+
+.h4 a:hover {
+    color: #ffb800;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #0a1829;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/* Bagian copyright */
+.copyright {
+    background-color: #0a1829;
+    color: #f3f3f3;
+    line-height: 20px;
+    padding: 4px 0 15px 0;
+    margin: 10px -45px -30px -45px;
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: underline solid #f3f3f3;
+    color: #f3f3f3;
+    margin-right: 10px;
+}
+
+.copyright a:hover {
+    color: #ffb800;
+}
