@@ -207,6 +207,38 @@ nav {
     opacity: 1;
 }
 
+/* Article */
+table {
+    border-collapse: collapse;
+    width: 75%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding: 5px 20px;
+    text-align: justify;
+    border-bottom: none;
+}
+
+td img {
+    width: 220px;
+    height: 150px;
+    display: flex;
+    justify-content: center; /* Supaya gambar di tengah */
+    align-items: center;
+}
+
+td a {
+    text-decoration: none;
+    color: #0a1829;
+}
+
+td a:hover {
+    font-weight: normal;
+}
+
 /* Huruf menjadi besar */
 .drop-cap {
     float: left;
@@ -375,37 +407,6 @@ h3 {
     display: block;
     margin: auto;
 } */
-
-table {
-    border-collapse: collapse;
-    width: 75%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-td {
-    padding: 5px 20px;
-    text-align: justify;
-    border-bottom: none;
-}
-
-td img {
-    width: 220px;
-    height: 150px;
-    display: flex;
-    justify-content: center; /* Supaya gambar di tengah */
-    align-items: center;
-}
-
-td a {
-    text-decoration: none;
-    color: #0a1829;
-}
-
-td a:hover {
-    font-weight: normal;
-}
 
 /* Main body di us.html */
 .column {
