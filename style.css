@@ -317,6 +317,10 @@ nav {
     text-align: justify;
 }
 
+h3 {
+    font-size: 21px;
+}
+
 /* Box model artikel */
 .container {
     max-width: 1100px;
@@ -352,6 +356,11 @@ nav {
     font-weight: normal;
 }
 
+.content img {
+    width: 220px;
+    height: 150px;
+}
+
 @media screen and (max-width: 450px) {
     .container, .content {
         width: 100%;
@@ -361,15 +370,42 @@ nav {
     }
 }
 
-h3 {
-    font-size: 21px;
-}
-
 /* Supaya gambar ditengah
 .img {
     display: block;
     margin: auto;
 } */
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding: 5px 20px;
+    text-align: justify;
+    border-bottom: none;
+}
+
+td img {
+    width: 220px;
+    height: 150px;
+    display: flex;
+    justify-content: center; /* Supaya gambar di tengah */
+    align-items: center;
+}
+
+td a {
+    text-decoration: none;
+    color: #0a1829;
+}
+
+td a:hover {
+    font-weight: normal;
+}
 
 /* Main body di us.html */
 .column {
@@ -379,9 +415,9 @@ h3 {
 
 /* Bagian kiri */
 .column.middle {
-    width: 52%;
+    width: 51%;
     margin: 2.5rem 3rem 2rem 4rem;
-    padding: 45px;
+    padding: 42px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: justify;
 }
@@ -401,7 +437,7 @@ hr {
 /* Bagian kanan */
 .column.side {
     width: 23%;
-    margin: 3.5rem 2rem 2rem 3rem;
+    margin: 3.5rem 2rem 2rem 2rem;
     padding: 10px;
 }
 
